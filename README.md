@@ -5,8 +5,7 @@ This project demonstrates a complete **ETL and analytics pipeline for pharmaceut
 
 ---
 
-## 🏗️ Architecture Diagram
-![Architecture Diagram](Architecture_Diagram.png)
+## 🏗️ Architecture Layer
 
 - **Bronze Layer**: Raw CSV files ingested into S3.
 - **Silver Layer**: Cleaned, deduplicated Parquet files written to S3.
