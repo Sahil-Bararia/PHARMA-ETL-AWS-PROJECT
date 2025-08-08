@@ -1,0 +1,4 @@
+SELECT year, month, SUM(revenue) AS monthly_revenue
+FROM pharma_sales_parquet
+GROUP BY year, month
+ORDER BY year, month;
