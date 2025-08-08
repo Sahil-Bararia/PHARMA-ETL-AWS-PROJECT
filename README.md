@@ -4,7 +4,10 @@
 This project demonstrates a complete **ETL and analytics pipeline for pharmaceutical sales data** using AWS services. Built using the **Medallion Architecture (Bronze, Silver, Gold layers)**, it replicates real-world consulting use cases often encountered in healthcare and pharma analytics.
 
 ---
+## 🚀 Short Summary
+I built a Medallion-style ETL pipeline on AWS that ingested synthetic pharma sales transaction data into **S3 (Bronze)**, cleaned and partitioned it using an **AWS Glue PySpark job** and stored it as **Parquet (Silver)**, and then exposed curated, queryable data via **Athena (Gold)**. I optimized for analytics by partitioning by year/month and used Parquet for its columnar performance. I also implemented **windowed SQL (LEAD/LAG, ranking, cumulative sums)** in Athena to surface **trends and product-level month-over-month comparisons**. During the build I debugged Glue catalog name mismatches and fixed IAM permissions to ensure secure writes to S3.
 
+---
 ## 🏗️ Architecture Layer
 
 - **Bronze Layer**: Raw CSV files ingested into S3.
