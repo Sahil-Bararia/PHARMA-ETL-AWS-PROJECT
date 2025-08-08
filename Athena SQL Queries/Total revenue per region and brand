@@ -1,0 +1,5 @@
+SELECT region, brand, SUM(revenue) AS total_revenue
+FROM raw
+GROUP BY region, brand
+ORDER BY total_revenue DESC;
+
