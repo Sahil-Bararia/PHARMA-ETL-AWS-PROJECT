@@ -1,1 +1,0 @@
-S3 (Raw Zone) (zs-pharma-etl/raw) ⟶ AWS Glue Crawler (Schema Detection) ⟶ AWS Glue Catalog (Metadata Storage) ⟶ AWS Glue ETL Job (PySpark) (Transform CSV → Parquet, add year/month) ⟶ S3 (Processed Zone) (zs-pharma-etl/processed) ⟶ AWS Glue Crawler (Processed Data Catalog) ⟶ AWS Athena (SQL Analytics, LAG/LEAD, Aggregations) ⟶ Power BI (Visualization)
