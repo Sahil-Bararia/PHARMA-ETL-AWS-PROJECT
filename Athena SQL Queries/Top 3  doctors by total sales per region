@@ -1,0 +1,11 @@
+with cte as(
+                select doctor_id,
+                        region,
+                        sum(revenue) as total_sales,
+                        rank() over(partition by region order by sum(revenue) desc) as doctor_rank
+                from raw
+                group by region,doctor_id
+)
+select doctor_id,region,total_sales
+from cte
+where doctor_rank<=3;
