@@ -84,4 +84,3 @@ Data Engineer | Power BI | Azure | AWS | Python
 
 ---
 
-> Feel free to fork this repo and adapt it for your own data engineering interviews or consulting use cases.
